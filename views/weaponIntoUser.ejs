@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/weaponIntoUser.css">
+</head>
+<body>
+    <h1>Your Armory</h1>
+
+<% fullUser[0].weapons.forEach(weapon=>{ %>
+    <div>
+        <img src="<%= weapon.img %>" class="images">
+        <h2>
+            
+            <%= weapon.name %>
+            <form action="/weapons/user/<%=weapon._id%>?_method=PUT" method="POST">
+                <label for="character">Name Your Weapon</label>
+                <input type="text" id="character" name="name"><br>
+                <button type="submit"> submit </button>
+            </form>
+        </h2>
+        <p>
+            <%= weapon.description %>
+        </p>
+        <form method="POST" action="/weapons/user/<%=weapon._id%>?_method=DELETE">
+        <button type="submit" value="deleteWeapon">Delete from Armory</button>
+    </form>
+    </div>
+<%})%>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+.images {
+    width: 400px;
+    border: 5px solid red;
+    height: 300px;
+  
+}
+body {
+    background-color: aqua;
+ }
+ 
+ .description {
+    text-align:center ;
+ }

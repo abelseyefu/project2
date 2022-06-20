@@ -1,0 +1,17 @@
+foRm {
+    text-align: center;
+    margin: 200px;
+    color: aquamarine;
+    
+    
+}
+
+h1 {
+    text-align: center;
+   text-transform: uppercase;
+   color: aqua;
+}
+
+body {
+    background-image: url("../images/wallpaper.webp");
+}

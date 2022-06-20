@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+.login {
+    text-align: right;
+}
+
+.data {
+    text-align: center;
+    width: 600px;
+}
+.image {
+    width: 400px;
+    border: 5px solid red;
+    height: 300px;
+ }
+
+body {
+    background-color: aqua;
+ }
+
+ .description {
+    text-align:center ;
+ }
+

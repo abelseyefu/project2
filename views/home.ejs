@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/home.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Ninja Tool Smith</h1>
+    </div>
+
+    <div class="login">
+        <a href="weapons/new"> <h2>Login</h2> </a>
+        </a>
+      
+    </div>
+
+
+
+    <div class="data">
+        <% weapons.forEach(function(weapon){%>
+            <div>
+
+               <a 
+               href="/weapons/<%=weapon._id%>"> <img src="<%=weapon.img%>" class="image">
+               </a>
+            </div>
+            <h2>
+                <%= weapon.name %>
+            </h2>
+            <h3>
+                <%= weapon.character %>
+            </h3>
+            <p class="description" >
+                <%= weapon.description %>
+
+            </p>
+            <%}) %>
+    </div>
+</body>
+
+</html>
+
+
+
+
