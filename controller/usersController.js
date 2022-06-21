@@ -27,7 +27,7 @@ const newUser = (req, res) => {
     Users.create(req.body, (err, user)=>{
       
     })
-    console.log("new user function")
+    
     res.render('newUser')
 }
 
@@ -44,10 +44,10 @@ const createUser = (req, res) => {
 const addWeaponToUser = async (req, res) =>{
     let user = await Users.findOne({name:"Abel"})
     user.weapons.push(req.params.id)
-    user.save(err=>err)
+   await user.save()
     // remove 0 if theres an issue
     let fullUser = await Users.find({}).populate("weapons")
-    console.log("hello")
+    console.log(fullUser)
     res.render("weaponIntoUser", {fullUser})
 }
 
