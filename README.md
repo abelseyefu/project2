@@ -10,7 +10,7 @@ the user can fill the form and make changes but is not saved in the database or 
  HOME PAGE.png
  INDEX PAGE .png
 
- 
+ https://abelseyefuproject2.herokuapp.com/weapons
 
 
 
